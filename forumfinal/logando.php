@@ -37,7 +37,7 @@
 			
 				$_SESSION['msg'] = 
 				'<br>
-				<div class="alert alert-success alert-dismissible fade show">
+				<div class="alert alert-success alert-dismissible fade show animated bounceInDown">
 	  				<button type="button" class="close" data-dismiss="alert">&times;</button>
 	  				<strong>Usuário logado com sucesso!</strong> Bem vindo '.$user.'!
 				</div>';

@@ -15,7 +15,7 @@ $result = mysqli_query($conexao,$sql);
     if(mysqli_affected_rows($conexao) > 0){
         $_SESSION['msg'] = 
         '<br>
-        <div class="alert alert-success alert-dismissible fade show">
+        <div class="alert alert-success alert-dismissible fade show animated bounceInDown">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Usuário editado com sucesso!</strong>
         </div>';
@@ -24,7 +24,7 @@ $result = mysqli_query($conexao,$sql);
     else{
         $_SESSION['msg'] = 
         '<br>
-        <div class="alert alert-danger alert-dismissible fade show">
+        <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Erro ao editar usuário!</strong> Verifique os dados!
         </div>';

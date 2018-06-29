@@ -11,7 +11,7 @@ if (isset($_SESSION['id_user']) && $_SESSION['adm'] == 1){
 			if(mysqli_affected_rows($conexao) > 0){
 				$_SESSION['msg'] = '
 				<br>
-			    <div class="alert alert-success alert-dismissible fade show">
+			    <div class="alert alert-success alert-dismissible fade show animated bounceInDown">
 			        <button type="button" class="close" data-dismiss="alert">&times;</button>
 			        <strong>Usuário deletado com sucesso!</strong>
 			    </div>';
@@ -21,7 +21,7 @@ if (isset($_SESSION['id_user']) && $_SESSION['adm'] == 1){
 		else{
 	       $_SESSION['msg'] = '
 	       <br>
-		   <div class="alert alert-danger alert-dismissible fade show">
+		   <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
 		       <button type="button" class="close" data-dismiss="alert">&times;</button>
 		       <strong>Erro ao excluir!</strong> Tente novamente!
 		   </div>';

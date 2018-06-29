@@ -88,13 +88,6 @@ if (isset($_SESSION['id_user'])) {
                       <span class="sr-only">(current)</span>
                     </a>
                   </li>
-                  <?php
-                  $html = '
-                  <li class="nav-item">
-                    <a class="nav-link" id="openModal" href="paineluser.php?id_user='.$id_user.'">Painel</a>
-                  </li>';
-                  echo $html;
-                  ?>
                   <li class="nav-item">
                     <a class="nav-link" id="openModal" href="contato.php">Contato</a>
                   </li>

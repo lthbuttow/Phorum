@@ -26,7 +26,7 @@ $id_ct = $_GET['id_categoria'];
           <?php 
           if (isset($_SESSION['msg']) && $_SESSION['msg'] == 'Success') {
             $html = '
-            <div class="alert alert-success alert-dismissible fade show">
+            <div class="alert alert-success alert-dismissible fade show animated bounceInDown">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Obrigado pela colaboração!</strong> Post Enviado com sucesso!
             </div>';
@@ -35,7 +35,7 @@ $id_ct = $_GET['id_categoria'];
           }
           if (isset($_SESSION['msg']) && $_SESSION['msg'] == 'Erro') {
             $html = '
-            <div class="alert alert-danger alert-dismissible fade show">
+            <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Erro ao enviar seu post!</strong> Tente novamente!
             </div>';

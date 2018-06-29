@@ -46,7 +46,7 @@ require_once('inc/conexao.php');
             echo $html;
             }
             else{
-            $html = '
+            $html1 = '
             <li class="nav-item">
               <a class="nav-link" href="logout.php">Logout</a>
             </li>
@@ -59,14 +59,14 @@ require_once('inc/conexao.php');
               <a class="nav-link" href="../paineluser.php">Painel Usuário</a>
             </li>
             ';
-            echo $html;
+            echo $html1;
             if ($_SESSION['adm'] == 1) {
-            $html = '
+            $html2 = '
             <li class="nav-item">
               <a class="nav-link" href="../paineladm_listagem.php">Admin</a>
             </li> ';
-              }
-              echo $html;
+              echo $html2;
+            }
             }
             ?>
             <li class="nav-item">

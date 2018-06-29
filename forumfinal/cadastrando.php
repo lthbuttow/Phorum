@@ -30,7 +30,7 @@
 			$sql=mysqli_query($conexao, "INSERT INTO usuarios(email, user, senha) VALUES('$email','$user','$senha')");
 			$_SESSION['msg'] = 
 			'<br>
-			<div class="alert alert-success alert-dismissible fade show">
+			<div class="alert alert-success alert-dismissible fade show animated bounceInDown">
   				<button type="button" class="close" data-dismiss="alert">&times;</button>
   				<strong>Usuário cadastrado com Sucesso!</strong> '.$user.'
 			</div>';

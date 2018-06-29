@@ -23,7 +23,7 @@ $result = mysqli_query($conexao,$sql);
 else{
     $_SESSION['msg'] = 
     '<br>
-    <div class="alert alert-danger alert-dismissible fade show">
+    <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Acesso restrito a usuários cadastrados!</strong> Logue-se ou cadastre-se!
     </div>';

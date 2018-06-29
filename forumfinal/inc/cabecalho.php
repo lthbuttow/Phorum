@@ -25,7 +25,7 @@ require_once('inc/conexao.php');
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand animated bounce" href="../index.php">Phorum</a>
+        <a class="navbar-brand animated bounce" href="index.php">Phorum</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,7 +46,7 @@ require_once('inc/conexao.php');
             echo $html;
             }
             else{
-            $html = '
+            $html1 = '
             <li class="nav-item">
               <a class="nav-link" href="logout.php">Logout</a>
             </li>
@@ -59,14 +59,14 @@ require_once('inc/conexao.php');
               <a class="nav-link" href="paineluser.php">Painel Usuário</a>
             </li>  
             ';
-            echo $html;
-            if ($_SESSION['adm'] == 1) {
-            $html = '
+            echo $html1;
+            if (isset($_SESSION['adm']) == 1) {
+            $html2 = '
             <li class="nav-item">
               <a class="nav-link" href="paineladm_listagem.php">Admin</a>
             </li> ';
               }
-              echo $html;
+              echo $html2;
             }
             ?>
             <li class="nav-item">

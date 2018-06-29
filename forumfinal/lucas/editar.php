@@ -4,6 +4,7 @@ if (isset($_SESSION['id_user'])) {
 
 $id_post = $_GET['id_post'];
 $id_ct = $_GET['id_ct'];
+$_SESSION['idct'] = $id_ct;
     
     $sql = 'SELECT * FROM posts WHERE id_post='.$id_post;
     $result = mysqli_query($conexao , $sql);
@@ -20,7 +21,7 @@ $id_ct = $_GET['id_ct'];
          <br>
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
-            <li class="breadcrumb-item "><a href="posts.php">Posts</a></li>
+             <li class="breadcrumb-item ">< <a href="posts.php">Posts</a></li>
             <li class="breadcrumb-item "><a href="painelposts_categorias.php">Painel Usuário - Categorias</a></li>
             <li class="breadcrumb-item "><?php echo '<a href="painelposts_listagem.php?id_ct='.$id_ct.'">Painel Usuário - Listagem</a>';?></li>
             <li class="breadcrumb-item active ">Editar</li>
@@ -97,7 +98,7 @@ $id_ct = $_GET['id_ct'];
 else{
     $_SESSION['msg'] = 
     '<br>
-    <div class="alert alert-danger alert-dismissible fade show">
+    <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Acesso restrito a usuários cadastrados!</strong> Logue-se ou cadastre-se!
     </div>';

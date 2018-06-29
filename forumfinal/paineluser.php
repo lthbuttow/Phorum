@@ -26,7 +26,7 @@ $result_array = mysqli_fetch_array($result,MYSQLI_ASSOC);
           <?php 
           if (isset($_SESSION['msg']) && $_SESSION['msg'] == 'Success') {
             $html = '
-            <div class="alert alert-success alert-dismissible fade show">
+            <div class="alert alert-success alert-dismissible fade show animated bounceInDown">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Confirmado!</strong> Operação concluída com sucesso!
             </div>';
@@ -35,7 +35,7 @@ $result_array = mysqli_fetch_array($result,MYSQLI_ASSOC);
           }
           if (isset($_SESSION['msg']) && $_SESSION['msg'] == 'Erro') {
             $html = '
-            <div class="alert alert-danger alert-dismissible fade show">
+            <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
               <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
               <strong>Erro ao executar a operação!</strong> Tente novamente!
             </div>';
@@ -123,10 +123,10 @@ $result_array = mysqli_fetch_array($result,MYSQLI_ASSOC);
 else{
     $_SESSION['msg'] = 
     '<br>
-    <div class="alert alert-danger alert-dismissible fade show">
+    <div class="alert alert-danger alert-dismissible fade show animated bounceInDown">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         <strong>Acesso restrito a usuários cadastrados!</strong> Logue-se ou cadastre-se!
     </div>';
-    header("Location: ../index.php");
+    header("Location: index.php");
 }
 require_once('inc/rodape.php');

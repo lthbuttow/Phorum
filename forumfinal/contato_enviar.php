@@ -28,6 +28,12 @@
 			$conteudo=$_POST['conteudo'];
 
 			$sql=mysqli_query($conexao, "INSERT INTO contato(email, titulo, conteudo) VALUES('$email','$titulo','$conteudo')");
+			    $_SESSION['msg'] = 
+		    '<br>
+		    <div class="alert alert-success alert-dismissible fade show animated bounceInDown">
+		        <button type="button" class="close" data-dismiss="alert">&times;</button>
+		        <strong>Mensagem enviada com sucesso!</strong> 
+		    </div>';
 
 			header("location:index.php");
 		?>
